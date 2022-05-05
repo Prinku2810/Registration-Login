@@ -1,6 +1,7 @@
 import re
 import pickle
 import Data
+import Loginsys
 #Register
 def Register():
       username=input("Enter Email id  :")
@@ -18,10 +19,10 @@ def Register():
       if match_password==None:
         print("Password entered is not valid")
      
-      user_pswd.update({username:password})
+      Data.user_pswd.update({username:password})
      
       with open("Register.txt",'wb') as regis:
-        pickle.dump(user_pswd,regis)
+        pickle.dump(Data.user_pswd,regis)
       print("kindly log in")
-      login_sys()
+      Loginsys.login_sys()
         
