@@ -1,3 +1,6 @@
+import Register
+import Login
+import Forgotpswd
 def login_sys():
       print('Choose 1 - LOGIN')
       print('Choose 2 - REGISTER')
@@ -6,14 +9,14 @@ def login_sys():
       option=int(input())
 
       if option==1:
-        Login()
+        Login.login()
         
       elif option==2:
-        Register()
+        Register.register_data()
        
 
       elif option==3:
-        forgot_password()
+        Forgotpswd.forgot_password()
        
         login_sys()
   
