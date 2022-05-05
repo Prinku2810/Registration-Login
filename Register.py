@@ -3,7 +3,7 @@ import pickle
 import Data
 import Loginsys
 #Register
-def Register():
+def register_data():
       username=input("Enter Email id  :")
       password=input("Enter Password  :")
 
