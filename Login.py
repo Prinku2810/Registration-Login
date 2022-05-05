@@ -1,7 +1,8 @@
 import re
 import pickle
 import Register
-def Login():
+import Loginsys
+def login():
     flag=0
     user_name=input("Enter Username  :")
     pass_word=input("Enter Password  :")
@@ -27,5 +28,5 @@ def Login():
             
     if flag==1:
         print("Kindly register to log in")
-        login_sys()
+        Loginsys.login_sys()
       
