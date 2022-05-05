@@ -22,3 +22,6 @@ def Register():
      
       with open("Register.txt",'wb') as regis:
         pickle.dump(user_pswd,regis)
+      print("kindly log in")
+      login_sys()
+        
