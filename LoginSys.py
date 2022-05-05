@@ -1,6 +1,7 @@
 import Register
 import Login
 import Forgotpswd
+
 def login_sys():
       print('Choose 1 - LOGIN')
       print('Choose 2 - REGISTER')
@@ -14,10 +15,9 @@ def login_sys():
       elif option==2:
         Register.register_data()
        
-
       elif option==3:
         Forgotpswd.forgot_password()
        
-        login_sys()
+     
   
  
