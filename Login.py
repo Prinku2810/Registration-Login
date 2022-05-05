@@ -21,12 +21,13 @@ def login():
             
             if(pass_word not in pass_check.values()):
               print("Entered password is incorrect")
-            
-            else:
-              print("Logged in Successfully")
-              print("\n")
-            
+              flag=1
+        
     if flag==1:
         print("Kindly register to log in")
         Loginsys.login_sys()
+    else:
+        print("Logged in Successfully")
+        print("\n")
+            
       
